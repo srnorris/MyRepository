@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Round House Restaurant</title>
+</head>
+<style>
+    #titleDiv,{
+        height: 60px;
+    }
+    #menuDiv{
+        height: 25px;
+    }
+    #picDiv{
+        height: 160px;
+        margin-top: 20px;
+    }
+    .centerClass{
+        text-align: center;
+    }
+    .menuClass{
+        float: left;
+        width: 80px;
+    }
+    #descriptionDiv{
+        margin: auto;
+        padding: 10px;
+        width: 380px;
+        height: 220px;
+        border-style: solid;
+    }
+    #formDiv{
+        text-align: right;
+    }
+    .inputClass{
+        text-align: left;
+        width: 220px;
+        padding-left: 20px;
+    }
+    #submitDiv{
+        text-align: right;
+    }
+    #phone, #additionalInformation, #reason{
+        width: 220px;
+    }
+    #additionalInformation{
+        height: 100px;
+    }
+    #formDiv{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #submitDiv{
+        padding-top: 10px;
+    }
+    #fullName,#eMail,#reason{
+        width: 200px;
+
+    }
+    #reason{
+        width: 225px;
+
+    }
+</style>
+<body>
+    <div id="titleDiv" name="titleDiv" class="centerClass"><h1>The Round House Restaurant</h1></div>
+    <hr>
+    <div id="menuDiv" name="menuDiv"><div id="homeDiv" class="menuClass"><a href="TheRoundHouseRestaurant.html">Home</a></div><div id="restMenuDiv" class="menuClass"><a href="menu.html">Menu</a></div><div id="contactDiv" class="menuClass"><a href="contactRH.html">Contact Us</a></div></div>
+    <hr>
+    <div id="formDiv" name="formDiv">
+            <form action="fakePage.html" method="POST">
+        <table>
+            <tr>
+                <td>Name: </td>
+                <td><div id="nameDiv" class="inputClass"><input type="text" name="fullName" id="fullName" class="inputClass"/></div></td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td>Email: </td>
+                <td><div id="eMailDiv" class="inputClass"><input type="text" name="eMail" id="eMail" class="inputClass"/></div></td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td>Phone: </td>
+                <td><div id="phoneDiv" class="inputClass"><input type="text" name="phone" id="phone" /></div></td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td>Reason for Inquiry: </td>
+                <td><div id="reasonSelect" class="inputClass"><select name="reason" id="reason" >
+                        <option value="1">Catering</option>
+                        <option value="2">Private Party</option>
+                        <option value="3">Feedback</option>
+                        <option value="4">Other</option>
+                    </select></div>
+                </td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td>Additional Information: </td>
+                <td><div id="textAreaDiv" class="inputClass"><textarea name="additionalInformation" id="additionalInformation"></textarea></div></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>Have you been to the restaurant?</td>
+                <td><div id="typeLicense"class="inputClass"><input type="radio" name="no" id="no" value="no" checked/>No <input type="radio" name="yes" value="yes"/>Yes</div></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>Best days to contact you:</td>
+                <td><div id="bestDaysDiv" class="inputClass">  M<input type="checkbox" name="monday" id="monday"/>   T<input type="checkbox" name="tuesday" id="tuesday"/>   W<input type="checkbox" name="wednesday" id="wednesday"/>   Th<input type="checkbox" name="thursday" id="thursday"/>   F<input type="checkbox" name="friday" id="friday"/></div></td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td></td>
+                <td><div id="submitDiv"><button type=submit name=submitButton >Send Request</button></div></td>
+            </tr>
+        </table>
+
+    </form>
+
+    </div>
+    <hr>
+    <div id="footerDiv" name="footerDiv" class="centerClass"><p>100 Hilltop Drive, Kingston, Rhode Island, 02892</p><p>(401)555-1212</p></div>
+    <hr>
+</body>
+</html>
