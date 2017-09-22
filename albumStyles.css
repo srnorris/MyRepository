@@ -3,6 +3,36 @@ table, th, td {
     border: 1px solid black;
     margin: auto;
 }
+td{
+    font-style: italic;
+}
+
+tbody {
+    background-color: #CDEFFF;
+  }
+  
 .titleClass{
     font-family: 'Acme', sans-serif;
 }
+a {
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: none;
+  }
+  
+  a:link {
+    color: #00c;
+  }
+  
+  a:visited {
+    color: Red;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    background-color: #36F2F8;
+  }
+  
+  a:active {
+    font-weight: bold;
+  }
