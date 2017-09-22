@@ -7,18 +7,29 @@
         rel="stylesheet" 
         type="text/css" />
         <style>
-            #albumImage, #albumTitle, #artistName, #releaseDate, #peopleHeader, #trackTable{
+            #albumTitle,#imageWrapperDiv,#artistName, #releaseDate, #peopleHeader, #trackTable{
                 text-align: center;
+            }
+            #albumImage{
+                background-image:url("Me.png");
+                background-position: center;
+                background-repeat:no-repeat;
+                width:100%;
+                height:178px;
+            }
+            #peopleList{
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-style: italic;
             }
             
         </style>
         <body style="background-color:azure";>
-            <div id = "albumImage"><image src="Images/me.png"></image></div>
-            <div id = "albumTitle" style = "text-align: center"><h1>Steve Sings His Shower Hits!</h1><p>(or, we can't have copyrighted material on our machines)</p></div>
+            <div id = "albumImage"></div>
+            <div id = "albumTitle" style = "text-align: center" class="titleClass"><h1>Steve Sings His Shower Hits!</h1><p>(or, we can't have copyrighted material on our machines)</p></div>
             <div id = "artistName"><a href="https://www.youtube.com/user/Norrisoft" target = "_blank">Steve Norris</a></div>
             <div id = "releaseDate"><p>9/20/2018</p></div>
             <div id = "divider"><p>________________________________________________________________________________________________________________________________________</p></div>
-            <div id = "peopleHeader"><h2>Band Members and Producers</h2></div>
+            <div id = "peopleHeader" class="titleClass"><h2>Band Members and Producers</h2></div>
             <div id = "peopleList">
                 <ul>
                     <li>Steve Norris - Vocals</li>
