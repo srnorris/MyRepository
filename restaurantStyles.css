@@ -1,6 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Acme);
 .headerClass{
+    font-family: 'Acme', sans-serif;
     text-align: center;
 }
+
+body{
+    
+}
+#titleDiv{
+    height: 80px;
+    background-color:white;
+    padding-top: 10x;
+    padding-top: 10px;
+ 
+}
+#menuDiv{
+    background-color:white;
+    height: 25px;
+    border-bottom: 1px white;
+    border-top: 1px black;
+    border-style: solid none;
+    padding-top: 10px;
+
+}
+.centerClass{
+    text-align: center;
+}
+.menuClass{
+    float: left;
+    width: 80px;
+}
+#descriptionDiv{
+    margin: auto;
+    padding: 10px;
+    width: 380px;
+    height: 220px;
+    border-style: solid;
+}
+
+#contentDiv{
+    position: relative;
+    height:420px;
+    width: 100%;
+    border-bottom: 1px black;
+    border-top: 1px black;
+    border-style: solid none;
+    text-align: center;
+}
+
 .footerClass{
     text-align: center;
+    background-color:white;
+    border-bottom: 1px black;
+    border-top: 1px white;
+    border-style: solid none;
+    padding-bottom: 10px;
+}
+
+#picDiv{
+    height: 160px;
+    margin-top: 20px;
+}
+
+.menuItem{
+    width: 300px;
+    text-align: center;
+    float:left;
+}
+#footerDiv{
+    position: relative;
+}
+#restMenuDiv{
+    display:inline-block;/*this is treated like text so we can wrap it in a wrapper div and center it with text-align-center*/
+}
+#wrapperDiv{
+   text-align:center;
+}
+.inputClass{
+    text-align: left;
+    width: 220px;
+    padding-left: 20px;
+}
+#submitDiv{
+    text-align: right;
+}
+#phone, #additionalInformation, #reason{
+    width: 220px;
+}
+#additionalInformation{
+    height: 100px;
+}
+#formDiv{
+    text-align: right;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#submitDiv{
+    padding-top: 10px;
+}
+#fullName,#eMail,#reason{
+    width: 200px;
+
+}
+#reason{
+    width: 225px;
+}
+
+#spacerDiv{
+    height: 10px;
+}
+#contentDiv{
+    background-color:azure;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+.required{
+    font-weight: bold;
 }
