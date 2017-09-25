@@ -8,6 +8,10 @@
 body{
     
 }
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
 #titleDiv{
     height: 80px;
     background-color:white;
