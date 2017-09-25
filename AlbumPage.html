@@ -6,15 +6,13 @@
         <link href="albumStyles.css" 
         rel="stylesheet" 
         type="text/css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         <style>
             #albumTitle,#imageWrapperDiv,#artistName, #releaseDate, #peopleHeader, #trackTable{
                 text-align: center;
             }
             #albumImage{
-                background-image:url("Me.png");
-                background-position: center;
-                background-repeat:no-repeat;
-                width:100%;
+                text-align: center;
                 height:178px;
             }
             #peopleList{
@@ -23,12 +21,15 @@
             }
             
         </style>
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
         <body style="background-color:azure";>
-            <div id = "albumImage"></div>
+            <div id = "albumImage"><image src="Images/Me.png" class ="img-circle"></image></image></div>
             <div id = "albumTitle" style = "text-align: center" class="titleClass"><h1>Steve Sings His Shower Hits!</h1><p>(or, we can't have copyrighted material on our machines)</p></div>
             <div id = "artistName"><a href="https://www.youtube.com/user/Norrisoft" target = "_blank">Steve Norris</a></div>
             <div id = "releaseDate"><p>9/20/2018</p></div>
-            <div id = "divider"><p>________________________________________________________________________________________________________________________________________</p></div>
+            <hr>
             <div id = "peopleHeader" class="titleClass"><h2>Band Members and Producers</h2></div>
             <div id = "peopleList">
                 <ul>
@@ -36,14 +37,14 @@
                     <li>Steve Norris - Producer</li>
                 </ul>
             </div>
-            <div id = "trackTable">
-                <table>
-                    <caption><h3>Tracks</h3></caption>
+            <div  id = "trackTable">
+                <table class = "table-striped table-responsive">
+                    <caption>Tracks</caption>
                     <thead>
                         <tr bgcolor="grey">
                             <th width = "100px">Track #</th>
                             <th width = "200px">Track Title</th>
-                            <th width = "400px">Track Length </th>
+                            <th width = "400px">Track Length</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -65,5 +66,10 @@
                     </tbody>
                 </table>
             </div>
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+            <script src="js/bootstrap.min.js"></script>
+
         </body>
 <html></html>
