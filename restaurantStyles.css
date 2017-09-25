@@ -12,22 +12,25 @@ body{
     height: 80px;
     background-color:white;
     padding-top: 10x;
-    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
  
 }
 #menuDiv{
     background-color:white;
-    height: 25px;
+    height: 40px;
     border-bottom: 1px white;
     border-top: 1px black;
     border-style: solid none;
     padding-top: 10px;
+    position: relative;
 
 }
 .centerClass{
     text-align: center;
 }
 .menuClass{
+    padding-left: 20px;
     float: left;
     width: 80px;
 }
@@ -39,7 +42,8 @@ body{
     border-style: solid;
 }
 .beverages{
-    width: 300px;
+    width: 320px;
+    padding-left: 20px;
 }
 
 #contentDiv{
@@ -70,6 +74,7 @@ body{
     width: 300px;
     text-align: center;
     float:left;
+    padding-left: 20px;
 }
 #footerDiv{
     position: relative;
@@ -103,13 +108,12 @@ body{
 #submitDiv{
     padding-top: 10px;
 }
-#fullName,#eMail,#reason{
-    width: 200px;
+#fullName,#eMail,#phone, #additionalInformation, #reason{
+    width: 220px;
+    margin-bottom: 5px;
 
 }
-#reason{
-    width: 225px;
-}
+
 
 #spacerDiv{
     height: 10px;

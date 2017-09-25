@@ -9,64 +9,91 @@
 <link href="restaurantStyles.css" 
 rel="stylesheet" 
 type="text/css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 <body>
-    <div id="titleDiv" name="titleDiv" class="headerClass"><h1>The Round House Restaurant</h1></div>
-    <div id="menuDiv" name="menuDiv"><div id="homeDiv" class="menuClass"><a href="TheRoundHouseRestaurant.html">Home</a></div><div id="menuLinkDiv" class="menuClass"><a href="menu.html">Menu</a></div><div id="contactDiv" class="menuClass"><a href="contactRH.html">Contact Us</a></div></div>
-    <div id="contentDiv">
-        <div id="formDiv" name="formDiv">
-            <form action="fakePage.html" method="POST">
-                <table>
-                    <tr>
-                        <td><div id="nameLabel" class="required">Name:  </div></td>
-                        <td><div id="nameDiv" class="inputClass"><input type="text" name="fullName" id="fullName" class="requiredClass"/></div></td>
-                    </tr>
-                    <tr></tr>
-                    <tr>
-                        <td><div id="eMailLabel" class="required">Email: </div></td>
-                        <td><div id="eMailDiv" class="inputClass"><input type="text" name="eMail" id="eMail" class="inputClass"/></div></td>
-                    </tr>
-                    <tr></tr>
-                    <tr>
-                        <td>Phone: </td>
-                        <td><div id="phoneDiv" class="inputClass"><input type="text" name="phone" id="phone" /></div></td>
-                    </tr>
-                    <tr></tr>
-                    <tr>
-                        <td><div id="reasonLabel" class="required">Reason for Inquiry: </div></td>
-                        <td><div id="reasonSelect" class="inputClass"><select name="reason" id="reason" >
-                                <option value="1">Catering</option>
-                                <option value="2">Private Party</option>
-                                <option value="3">Feedback</option>
-                                <option value="4">Other</option>
-                            </select></div>
-                        </td>
-                    </tr>
-                    <tr></tr>
-                    <tr>
-                        <td><div id="additionalInfoLabel" class="required">Additional Information: </div></td>
-                        <td><div id="textAreaDiv" class="inputClass"><textarea name="additionalInformation" id="additionalInformation"></textarea></div></td>
-                    </tr>
-                    <tr></tr>
-                    <tr></tr>
-                    <tr>
-                        <td>Have you been to the restaurant?</td>
-                        <td><div id="typeLicense"class="inputClass"><input type="radio" name="no" id="no" value="no" checked/>No <input type="radio" name="yes" value="yes"/>Yes</div></td>
-                    </tr>
-                    <tr></tr>
-                    <tr></tr>
-                    <tr>
-                        <td>Best days to contact you:</td>
-                        <td><div id="bestDaysDiv" class="inputClass">  M<input type="checkbox" name="monday" id="monday"/>   T<input type="checkbox" name="tuesday" id="tuesday"/>   W<input type="checkbox" name="wednesday" id="wednesday"/>   Th<input type="checkbox" name="thursday" id="thursday"/>   F<input type="checkbox" name="friday" id="friday"/></div></td>
-                    </tr>
-                    <tr></tr>
-                    <tr>
-                        <td></td>
-                        <td><div id="submitDiv"><button type=submit name=submitButton >Send Request</button></div></td>
-                    </tr>
-                </table>
-            </form>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="page-header" style="text-align: center">
+                            <h1>We're Moving! Details Soon!</h1>      
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col">
+                        <div id="titleDiv" name="titleDiv" class="headerClass"><h1>The Round House Restaurant</h1></div>
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="col">
+                            <div class="col" id="menuDiv" name="menuDiv">
+                                    <ul class="nav nav-tabs">
+                                            <li class="active"><a href="TheRoundHouseRestaurant.html" title="home icon" aria-expanded="false"><span class="round-tabs two"><i class="glyphicon glyphicon-home"></i></span></a></li>
+                                            <li><a href="menu.html">Menu</a></li>
+                                            <li><a href="contactRH.html">Contact Us</a></li>
+                                    </ul>
+                            </div>
+                    </div>
+            </div>
+            <div id="contentDiv">
+                <div id="formDiv" name="formDiv">
+                    <form action="fakePage.html" method="POST">
+                        <table>
+                            <tr>
+                                <td><div id="nameLabel" class="required">Name:  </div></td>
+                                <td><div id="nameDiv" class="inputClass"><input type="text" name="fullName" id="fullName" class="requiredClass"/></div></td>
+                            </tr>
+                            <tr></tr>
+                            <tr>
+                                <td><div id="eMailLabel" class="required">Email: </div></td>
+                                <td><div id="eMailDiv" class="inputClass"><input type="text" name="eMail" id="eMail" class="inputClass"/></div></td>
+                            </tr>
+                            <tr></tr>
+                            <tr>
+                                <td>Phone: </td>
+                                <td><div id="phoneDiv" class="inputClass"><input type="text" name="phone" id="phone" /></div></td>
+                            </tr>
+                            <tr></tr>
+                            <tr>
+                                <td><div id="reasonLabel" class="required">Reason for Inquiry: </div></td>
+                                <td><div id="reasonSelect" class="inputClass"><select name="reason" id="reason" >
+                                        <option value="1">Catering</option>
+                                        <option value="2">Private Party</option>
+                                        <option value="3">Feedback</option>
+                                        <option value="4">Other</option>
+                                    </select></div>
+                                </td>
+                            </tr>
+                            <tr></tr>
+                            <tr>
+                                <td><div id="additionalInfoLabel" class="required">Additional Information: </div></td>
+                                <td><div id="textAreaDiv" class="inputClass"><textarea name="additionalInformation" id="additionalInformation"></textarea></div></td>
+                            </tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr>
+                                <td>Have you been to the restaurant?</td>
+                                <td><div id="typeLicense"class="inputClass"><input type="radio" name="no" id="no" value="no" checked/>No <input type="radio" name="yes" value="yes"/>Yes</div></td>
+                            </tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr>
+                                <td>Best days to contact you:</td>
+                                <td><div id="bestDaysDiv" class="inputClass">  M<input type="checkbox" name="monday" id="monday"/>   T<input type="checkbox" name="tuesday" id="tuesday"/>   W<input type="checkbox" name="wednesday" id="wednesday"/>   Th<input type="checkbox" name="thursday" id="thursday"/>   F<input type="checkbox" name="friday" id="friday"/></div></td>
+                            </tr>
+                            <tr></tr>
+                            <tr>
+                                <td></td>
+                                <td><div id="submitDiv"><button type=submit name=submitButton >Send Request</button></div></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+            <div id="footerDiv" name="footerDiv" class="footerClass"><p>100 Hilltop Drive, Kingston, Rhode Island, 02892</p><p>(401)555-1212</p></div>
         </div>
-    </div>
-    <div id="footerDiv" name="footerDiv" class="footerClass"><p>100 Hilltop Drive, Kingston, Rhode Island, 02892</p><p>(401)555-1212</p></div>
 </body>
 </html>
