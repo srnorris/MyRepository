@@ -3,6 +3,7 @@
     font-family: 'Acme', sans-serif;
     text-align: center;
 }
+/* finish styling Beverages and home page links */
 
 body{
     
@@ -37,10 +38,12 @@ body{
     height: 220px;
     border-style: solid;
 }
+.beverages{
+    width: 300px;
+}
 
 #contentDiv{
     position: relative;
-    height:420px;
     width: 100%;
     border-bottom: 1px black;
     border-top: 1px black;
@@ -63,6 +66,7 @@ body{
 }
 
 .menuItem{
+    position: relative;
     width: 300px;
     text-align: center;
     float:left;
@@ -71,6 +75,7 @@ body{
     position: relative;
 }
 #restMenuDiv{
+    position: relative;
     display:inline-block;/*this is treated like text so we can wrap it in a wrapper div and center it with text-align-center*/
 }
 #wrapperDiv{
@@ -110,9 +115,10 @@ body{
     height: 10px;
 }
 #contentDiv{
+    position: relative;
     background-color:azure;
     padding-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .required{
