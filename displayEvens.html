@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Display Evens</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- Calling jquery first -->
+        <link href="displayEvensStyles.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript">
+        function validateForm()
+        {
+            document.getElementById("evenNumbers").value = "";
+            var startNumber = "";
+            var endNumber = "";
+            var stepNumber = "";
+            startNumber = Number(document.getElementById("startingNumber").value);
+            endNumber = Number(document.getElementById("endingNumber").value);
+            stepNumber = Number(document.getElementById("stepNumber").value);
+            var errorText = "";
+            errorFound = false;
+            if(endNumber < startNumber)
+            {
+                errorFound = true;
+                errorText = errorText+"Ending Number must be greater than starting number."
+            }
+            if(isNaN(startNumber) || document.getElementById("startingNumber").value == "")
+            {
+                errorFound = true;
+                errorText = errorText+"\nStarting Number must be numeric."
+            }
+            if(isNaN(endNumber) || document.getElementById("endingNumber").value  == "")
+            {
+                errorFound = true;
+                errorText = errorText+"\nEnding Number must be numeric."
+            }
+            if(isNaN(stepNumber) || document.getElementById("stepNumber").value == "")
+            {
+                errorFound = true;
+                errorText = errorText+"\nStep Number must be numeric."
+            }else{
+             if(stepNumber < 1)
+                {
+                errorText = errorText+"\nStep Number must be greater than zero."
+                }
+            }
+            if(errorFound)
+            {
+                alert(errorText);
+            }else
+            {
+                //var resultArray = new Array();
+                for(var i = startNumber; i < endNumber; i++)
+                {
+                    if(i%2 == 0)
+                    {
+                        //resultArray.push(i);
+                        document.getElementById("evenNumbers").value = document.getElementById("evenNumbers").value + i+"\n";
+                    }
+                    i=i+stepNumber-1;
+                    
+                }
+                
+            }   
+         }
+        
+        </script>
+    </head>
+<noscript>This site is best viewed with JavaScript enabled.</noscript>
+       <body>
+        <div class="container">
+            <div class="row">
+                <div><h1>Display Evens</h1></div>
+            </div>
+            <div id="fromDiv"><form action="fakePage.html" method="POST">
+                    <table>
+                        <tr>
+                            <td><div id="startLabel" class="required">Starting Number  </div></td>
+                            <td><div id="startingNumberDiv"><input type="text" class="form-control" id="startingNumber"></div></td>
+                        </tr>
+                        <tr></tr>
+                        <tr>
+                                <td><div id="endLabel" class="required">Ending Number  </div></td>
+                                <td><div id="endingNumberDiv"><input type="text" class="form-control" id="endingNumber"></div></td>
+                        </tr>
+                        <tr></tr>
+                        <tr>
+                                <td><div id="stepLabel" class="required">Step  </div></td>
+                                <td><div id="stepNumberDiv"><input type="text" class="form-control" id="stepNumber"></div></td>
+                        </tr>
+                        <tr></tr>
+                        <tr>
+                            <td></td>
+                            <td><div id="submitDiv"><button type="button" class="btn btn-primary btn-md" onclick = "validateForm();">Display Evens</button></div></td>
+                        </tr>
+                        <tr>
+                                <td><div id="resultLabel">Here are the even numbers</div></td>
+                                <td></td>
+                        </tr>
+                        <tr>
+                                <td><div id="textAreaDiv" class="inputClass"><textarea class="form-control" rows="5" id="evenNumbers"></textarea></div></td>
+                                <td></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        </body>
+    </html>
